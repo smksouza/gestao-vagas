@@ -74,7 +74,6 @@ public class CandidateController {
                     )
             })
     })
-
     @SecurityRequirement(name = "jwt_auth")
     public List<JobEntity> findJobByFilter(@RequestParam  String filter ) {
        return this.listAllJobsByFilterUseCase.execute(filter);
